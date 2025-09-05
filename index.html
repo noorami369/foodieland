@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodieland</title>
     <link rel="stylesheet" href="output.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/foodieland-page-logo-removebg-preview.png"
+      type="image/x-icon"
+    />
   </head>
   <body class="h-screen">
     <header class="flex flex-row justify-around mt-[40px]">
@@ -12,11 +17,11 @@
         <img src="./img/Foodieland..png" alt="" />
       </div>
       <div class="flex flex-row justify-between w-[505px]">
-        <div class="cursor-pointer">Home</div>
-        <div class="cursor-pointer">Recipes</div>
-        <div class="cursor-pointer">Blog</div>
-        <div class="cursor-pointer">Contact</div>
-        <div class="cursor-pointer">About us</div>
+        <div class="cursor-pointer font-medium text-[16px]">Home</div>
+        <div class="cursor-pointer font-medium text-[16px]">Recipes</div>
+        <div class="cursor-pointer font-medium text-[16px]">Blog</div>
+        <div class="cursor-pointer font-medium text-[16px]">Contact</div>
+        <div class="cursor-pointer font-medium text-[16px]">About us</div>
       </div>
       <div class="flex flex-row justify-between w-[133px]">
         <div>
@@ -34,18 +39,157 @@
     <main class="flex flex-col justify-center items-center">
       <section class="flex w-[1280px] h-[640px]">
         <div
-          class="flex flex-col flex-1 bg-[#E7FAFE] rounded-tl-4xl rounded-bl-4xl"
+          class="flex flex-col flex-1 bg-[#E7FAFE] rounded-tl-4xl rounded-bl-4xl p-[50px]"
         >
-          <div class="flex flex-row bg-white w-[156px] h-[45px]">
+          <div
+            class="flex flex-row justify-center items-center bg-white w-[156px] h-[45px] rounded-4xl cursor-default px-[10px] py-[20px]"
+          >
             <img class="size-[24px]" src="./img/letter.svg" alt="" />
-            <p>Hot Recipes</p>
+            <p class="ml-[13px] font-semibold text-[14px]">Hot Recipes</p>
+          </div>
+          <div class="mt-[32px]">
+            <p class="font-semibold text-[64px]">
+              Spicy delicious chicken wings
+            </p>
+          </div>
+          <div class="mt-[24px] mr-[50px]">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+              minim
+            </p>
+          </div>
+          <div class="flex">
+            <div class="flex flex-row">
+              <button
+                class="bg-[#0000000D] px-[16px] py-[8px] rounded-4xl mt-[41px]"
+              >
+                <img
+                  class="inline-block size-[24px]"
+                  src="./img/Timer.svg"
+                  alt=""
+                />
+                <p
+                  class="inline-block font-medium text-[14px] ml-[10px] text-[#00000099]"
+                >
+                  30 Minutes
+                </p>
+              </button>
+            </div>
+            <div class="flex flex-row">
+              <button
+                class="bg-[#0000000D] px-[16px] py-[8px] rounded-4xl ml-[16px] mt-[41px]"
+              >
+                <img
+                  class="inline-block size-[24px]"
+                  src="./img/ForkKnife.svg"
+                  alt=""
+                />
+                <p
+                  class="inline-block font-medium text-[14px] ml-[10px] text-[#00000099]"
+                >
+                  Chicken
+                </p>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-row">
+            <div class="flex mt-[94px]">
+              <div>
+                <img src="./img/Ellipse 2.svg" alt="" />
+              </div>
+              <div class="ml-[16px]">
+                <h5 class="font-bold text-[16px]">John Smith</h5>
+                <p class="font-medium text-[14px] text-[#00000099] mt-[3px]">
+                  15 March 2022
+                </p>
+              </div>
+            </div>
+
+            <div class="flex">
+              <button
+                class="w-[200px] h-[60px] bg-[#000000] rounded-2xl mt-[89px] ml-[157px]"
+              >
+                <p class="inline-block font-semibold text-[14px] text-white">
+                  View Recipes
+                </p>
+                <img class="inline-block" src="./img/PlayCircle.svg" alt="" />
+              </button>
+            </div>
           </div>
         </div>
         <div
           class="flex-1 bg-[url(./img/chicken.png)] bg-no-repeat rounded-tr-4xl rounded-br-4xl"
-        ></div>
+        >
+          <img class="mt-[50px] ml-[-50px]" src="./img/Like-Badge.png" alt="" />
+        </div>
       </section>
-      <section></section>
+      <section class="mt-[160px] w-[1280px] h-[342px]">
+        <div class="flex flex-row justify-between">
+          <div>
+            <h2 class="font-semibold text-[48px]">Categories</h2>
+          </div>
+          <div>
+            <button
+              class="bg-[#E7FAFE] w-[200px] h-[60px] rounded-3xl ml-[842px] mt-[5px]"
+            >
+              <p class="font-semibold text-[16px]">View All Categories</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex gap-[40px] mt-[80px] w-[1280px] h-[202px]">
+          <div class="w-[180px] bg-[#7082461A] shadow-md rounded-[30px]">
+            <div class="flex justify-center">
+              <img class="size-[100px]" src="./img/rice.png" alt="" />
+            </div>
+            <div class="flex justify-center items-end mt-[50px]">
+              <p class="font-semibold text-[18px]">Breakfast</p>
+            </div>
+          </div>
+          <div class="w-[180px] bg-[#6CC63F1A] shadow-md rounded-[30px]">
+            <div class="flex justify-center">
+              <img class="size-[120px] ml-[20px]" src="./img/Lettuce.png" alt="" />
+            </div>
+            <div class="flex justify-center items-end mt-[30px]">
+              <p class="font-semibold text-[18px]">Vegan</p>
+            </div>
+          </div>
+          <div class="w-[180px] bg-[#CC261B1A] shadow-md rounded-[30px]">
+            <div class="flex justify-center">
+              <img class="size-[100px]" src="./img/meet.png" alt="" />
+            </div>
+            <div class="flex justify-center items-end mt-[50px]">
+              <p class="font-semibold text-[18px]">Meat</p>
+            </div>
+          </div>
+          <div class="w-[180px] bg-[#F09E001A] shadow-md rounded-[30px]">
+            <div class="flex justify-center">
+              <img class="size-[100px]" src="./img/cake.png" alt="" />
+            </div>
+            <div class="flex justify-center items-end mt-[50px]">
+              <p class="font-semibold text-[18px]">Dessert</p>
+            </div>
+          </div>
+          <div class="w-[180px] bg-[#0000000D] shadow-md rounded-[30px]">
+            <div class="flex justify-center">
+              <img class="size-[100px]" src="./img/Sandwich.png" alt="" />
+            </div>
+            <div class="flex justify-center items-end mt-[50px]">
+              <p class="font-semibold text-[18px]">Lunch</p>
+            </div>
+          </div>
+          <div class="w-[180px] bg-[#0000000D] shadow-md rounded-[30px]">
+            <div class="flex justify-center">
+              <img class="size-[100px]" src="./img/Chocolate.png" alt="" />
+            </div>
+            <div class="flex justify-center items-end mt-[50px]">
+              <p class="font-semibold text-[18px]">Chocolate</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section></section>
       <section></section>
       <section></section>
