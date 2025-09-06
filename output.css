@@ -8,8 +8,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -175,35 +177,44 @@
   .relative {
     position: relative;
   }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
+  .top-2 {
+    top: calc(var(--spacing) * 2);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
+  .top-5 {
+    top: calc(var(--spacing) * 5);
+  }
+  .top-40 {
+    top: calc(var(--spacing) * 40);
+  }
+  .top-42 {
+    top: calc(var(--spacing) * 42);
+  }
+  .top-70 {
+    top: calc(var(--spacing) * 70);
+  }
+  .top-75 {
+    top: calc(var(--spacing) * 75);
   }
   .top-\[20px\] {
     top: 20px;
   }
-  .top-\[35px\] {
-    top: 35px;
-  }
-  .top-\[px\] {
-    top: px;
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
-  .right-20 {
-    right: calc(var(--spacing) * 20);
+  .right-5 {
+    right: calc(var(--spacing) * 5);
   }
-  .right-\[20px\] {
-    right: 20px;
+  .right-10 {
+    right: calc(var(--spacing) * 10);
   }
-  .right-\[30px\] {
-    right: 30px;
+  .right-50 {
+    right: calc(var(--spacing) * 50);
   }
   .right-\[35px\] {
     right: 35px;
+  }
+  .left-83 {
+    left: calc(var(--spacing) * 83);
   }
   .z-10 {
     z-index: 10;
@@ -214,8 +225,14 @@
   .m-auto {
     margin: auto;
   }
+  .mx-\[47px\] {
+    margin-inline: 47px;
+  }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
+  }
+  .my-\[22px\] {
+    margin-block: 22px;
   }
   .mt-\[3px\] {
     margin-top: 3px;
@@ -244,6 +261,12 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .mt-\[72px\] {
+    margin-top: 72px;
+  }
+  .mt-\[74px\] {
+    margin-top: 74px;
+  }
   .mt-\[80px\] {
     margin-top: 80px;
   }
@@ -256,17 +279,29 @@
   .mt-\[96px\] {
     margin-top: 96px;
   }
+  .mt-\[143px\] {
+    margin-top: 143px;
+  }
   .mt-\[160px\] {
     margin-top: 160px;
   }
   .mt-\[183px\] {
     margin-top: 183px;
   }
+  .mt-\[312px\] {
+    margin-top: 312px;
+  }
+  .mr-\[20px\] {
+    margin-right: 20px;
+  }
   .mr-\[24px\] {
     margin-right: 24px;
   }
   .mr-\[50px\] {
     margin-right: 50px;
+  }
+  .mr-\[80px\] {
+    margin-right: 80px;
   }
   .ml-\[-50px\] {
     margin-left: -50px;
@@ -322,6 +357,9 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[80px\] {
+    height: 80px;
+  }
   .h-\[202px\] {
     height: 202px;
   }
@@ -331,8 +369,14 @@
   .h-\[342px\] {
     height: 342px;
   }
+  .h-\[356px\] {
+    height: 356px;
+  }
   .h-\[434px\] {
     height: 434px;
+  }
+  .h-\[597px\] {
+    height: 597px;
   }
   .h-\[640px\] {
     height: 640px;
@@ -358,11 +402,26 @@
   .w-\[400px\] {
     width: 400px;
   }
+  .w-\[450px\] {
+    width: 450px;
+  }
+  .w-\[480px\] {
+    width: 480px;
+  }
   .w-\[505px\] {
     width: 505px;
   }
+  .w-\[526px\] {
+    width: 526px;
+  }
+  .w-\[620px\] {
+    width: 620px;
+  }
   .w-\[706px\] {
     width: 706px;
+  }
+  .w-\[710px\] {
+    width: 710px;
   }
   .w-\[1280px\] {
     width: 1280px;
@@ -412,6 +471,9 @@
   .gap-\[40px\] {
     gap: 40px;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -420,6 +482,12 @@
   }
   .rounded-4xl {
     border-radius: var(--radius-4xl);
+  }
+  .rounded-\[16px\] {
+    border-radius: 16px;
+  }
+  .rounded-\[24px\] {
+    border-radius: 24px;
   }
   .rounded-\[30px\] {
     border-radius: 30px;
@@ -440,6 +508,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
+  }
   .bg-\[\#000000\] {
     background-color: #000000;
   }
@@ -451,6 +523,9 @@
   }
   .bg-\[\#E7FAFE\] {
     background-color: #E7FAFE;
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -501,11 +576,29 @@
   .px-\[16px\] {
     padding-inline: 16px;
   }
+  .px-\[32px\] {
+    padding-inline: 32px;
+  }
+  .px-\[47px\] {
+    padding-inline: 47px;
+  }
+  .px-\[52px\] {
+    padding-inline: 52px;
+  }
   .py-\[8px\] {
     padding-block: 8px;
   }
   .py-\[20px\] {
     padding-block: 20px;
+  }
+  .py-\[22px\] {
+    padding-block: 22px;
+  }
+  .pl-\[20px\] {
+    padding-left: 20px;
+  }
+  .pl-\[32px\] {
+    padding-left: 32px;
   }
   .text-center {
     text-align: center;
@@ -528,6 +621,10 @@
   .text-\[64px\] {
     font-size: 64px;
   }
+  .leading-15 {
+    --tw-leading: calc(var(--spacing) * 15);
+    line-height: calc(var(--spacing) * 15);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -535,6 +632,10 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -630,6 +731,10 @@ body {
   syntax: "<length-percentage>";
   inherits: false;
   initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -776,6 +881,7 @@ body {
       --tw-gradient-from-position: 0%;
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
